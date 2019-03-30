@@ -47,9 +47,11 @@ console.log(typeof function: ${typeof function(){}});`
 
    ​	
 
-   ##### c 数值转换：
+   ##### c 类型转换：
 
    ###### 	Number( ):
+
+   ​	把**所有的数据类型**转化为数值
 
    ```
    console.log(`Number('be happy'): ${Number('be happy')}`);
@@ -67,17 +69,76 @@ console.log(typeof function: ${typeof function(){}});`
 
    ###### 	parseInt( ):
 
-   ​	把字符串转换为10进制整数，从前往后解析，可以指定把字符串按多少进制进行解析（详见
+   ​	把**字符串**转换为10进制整数，从前往后解析，**[可以指定把字符串按多少进制进行解析](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)**)。
 
-   [js进制转换]: 4js中进制转换.md)
+   ###### 	parseFloat():
 
-2. String
+   ​	把**字符串**转化为整数或者小数，从前往后解析，**不能指定把字符串按多少进制进行解析**。
 
-3. Boolean
+   ##### d [进制转换](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)
 
-4. Undefined
+2. #### String
 
-5. Null
+   ##### a 类型转换
+
+   ###### toString( ):
+
+   可以将number，boolean，object类型转换为数值类型。
+
+   ```
+   num=11;
+   console.log(`num=11\nnum.toString(): ${num.toString()}`);
+   console.log(`num.toString(2): ${num.toString(2)}\ntoString()方法可以把number类型的数据转换进制`);
+   console.log(`true.toString(): ${true.toString()}`);
+   console.log(`{test:'hhh'}.toString(): ${{test:'hhh'}.toString()}`);
+   ```
+
+   ![3.3](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.3.png)
+
+   ###### String( ):
+
+   可以把所有的数据类型转换为string。
+
+   ```
+   num=11;
+   console.log(`num=11\nString(num): ${String(num)}\nString()方法不能进行进制转换`);
+   console.log(`String(true): ${String(true)}`);
+   console.log(`String({test:'hhh'}): ${String({test:'hhh'})}`);
+   console.log(`String(null): ${String(null)}`);
+   console.log(`String(undefined): ${String(undefined)}`);
+   ```
+
+   ![3.4](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.4.png)
+
+3. #### Boolean
+
+   ##### a 类型转换
+
+   ###### Boolean( ):
+
+   ```
+   console.log(`Boolean(11): ${Boolean(11)}`);
+   console.log(`Boolean(0): ${Boolean(0)}`);
+   console.log(`Boolean(NaN): ${Boolean(NaN)}`);
+   console.log(`Boolean(true): ${Boolean(true)}`);
+   console.log(`Boolean(''): ${Boolean('')}`);
+   console.log(`Boolean('hiahia'): ${Boolean('hiahia')}`);
+   console.log(`Boolean(undefined): ${Boolean(undefined)}`);
+   console.log(`Boolean(null): ${Boolean(null)}`);
+   console.log(`Boolean({}): ${Boolean({})}`);
+   ```
+
+   ![3.5](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.5.png)
+
+4. ##### Undefined
+
+   一个变量声明了但是没有初始化
+
+5. ##### Null
+
+   null表示一个空指针对象，所以typeof null === object。
+
+   如果一个准备用一个变量来表示对象，可以把它初始化为null。
 
 ### 引用类型（Object）
 

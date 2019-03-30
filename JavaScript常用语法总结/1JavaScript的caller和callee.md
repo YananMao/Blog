@@ -1,8 +1,4 @@
----
-typora-copy-images-to: ..\pictures
----
-
-关于JavaScript的caller和callee：
+# 关于JavaScript的caller和callee
 
 ```
 function outerFunction(){

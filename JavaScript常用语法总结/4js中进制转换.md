@@ -16,7 +16,7 @@ console.log(`parseInt(111,2): ${parseInt(111,2)}`);
 console.log(`parseInt('12316712',5): ${parseInt('12316712',5)}`);
 ```
 
-![4.0](..\pictures\4.0.png)
+![4.0](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/4.0.png)
 
 ### toString(bool/number,radius = 10)
 
@@ -27,4 +27,4 @@ num2 = '111';
 console.log(`num2 = '111';\nnum.toString(3): ${num2.toString(3)}`);
 ```
 
-![4.1](..\pictures\4.1.png)
+![4.1](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/4.1.png)
