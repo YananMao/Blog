@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ..\pictures
+---
+
 关于JavaScript的caller和callee：
 
 ```
@@ -21,7 +25,7 @@ outerFunction();
 
 浏览器打印结果：
 
-![1](C:\Users\Administrator\Desktop\1.png)
+![1.0](..\pictures\1.0.png)
 
 
 

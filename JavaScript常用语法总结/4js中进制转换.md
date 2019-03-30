@@ -8,8 +8,8 @@
 
 2<=rdius<=36(0-9,a-z)
 
-![1](C:\Users\Administrator\Desktop\1.png)
+![4.0](..\pictures\4.0.png)
 
 ### toString(bool/number,radius = 10)
 
-![1](C:\Users\Administrator\Desktop\1.png)
+![4.1](..\pictures\4.1.png)
