@@ -25,7 +25,7 @@ outerFunction();
 
 浏览器打印结果：
 
-![1.0](..\..\pictures\1.0.png)
+![1.0](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/1.0.png)
 
 
 

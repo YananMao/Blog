@@ -14,7 +14,7 @@ console.log(typeof function: ${typeof function(){}});`
 
 控制台结果为：
 
-![3.0](..\pictures\3.0.png)
+![3.0](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.0.png)
 
 ### 基本类型
 
@@ -43,7 +43,7 @@ console.log(typeof function: ${typeof function(){}});`
    console.log(`isNaN(true): ${isNaN(true)}`);
    ```
 
-   ![3.2](..\pictures\3.2.png)
+   ![3.2](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.2.png)
 
    ​	
 
@@ -63,15 +63,13 @@ console.log(typeof function: ${typeof function(){}});`
    console.log(`Number({}): ${Number({})}`);
    ```
 
-   ​	![3.1](..\pictures\3.1.png)
+   ​	![3.1](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.1.png)
 
    ###### 	parseInt( ):
 
    ​	把字符串转换为10进制整数，从前往后解析，可以指定把字符串按多少进制进行解析（详见
 
-   [js进制转换]: 4js中进制转换.md）
-
-   
+   [js进制转换]: 4js中进制转换.md)
 
 2. String
 
