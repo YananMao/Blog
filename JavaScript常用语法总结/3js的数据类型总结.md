@@ -47,7 +47,7 @@ console.log(typeof function: ${typeof function(){}});`
 
    ​	
 
-   ##### c 类型转换：
+   ##### d 类型转换：
 
    ###### 	Number( ):
 
@@ -75,7 +75,7 @@ console.log(typeof function: ${typeof function(){}});`
 
    ​	把**字符串**转化为整数或者小数，从前往后解析，**不能指定把字符串按多少进制进行解析**。
 
-   ##### d [进制转换](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)
+   ##### e [进制转换](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)
 
 2. #### String
 
@@ -83,7 +83,7 @@ console.log(typeof function: ${typeof function(){}});`
 
    ###### toString( ):
 
-   可以将number，boolean，object类型转换为数值类型。
+   可以将number，boolean，object(**除了null和undefined**)类型转换为数值类型。
 
    ```
    num=11;
@@ -97,7 +97,7 @@ console.log(typeof function: ${typeof function(){}});`
 
    ###### String( ):
 
-   可以把所有的数据类型转换为string。
+   可以把**所有的数据类型**转换为string。
 
    ```
    num=11;
@@ -136,7 +136,7 @@ console.log(typeof function: ${typeof function(){}});`
 
 5. ##### Null
 
-   null表示一个空指针对象，所以typeof null === object。
+   **null表示一个空指针对象，所以typeof null === object**。
 
    如果一个准备用一个变量来表示对象，可以把它初始化为null。
 
@@ -145,8 +145,25 @@ console.log(typeof function: ${typeof function(){}});`
 看下一个最简单的对象，他从Object（）继承了哪些属性：
 
 ```
-let obj = new Object();`
+let obj = new Object();
+obj.name = 'mao';
+obj.lovers = ['sherlock','messi','zht'];
 console.log(obj.__proto__);
+console.log(`let obj = new Object();\nobj.name = 'mao';`)
+console.log('%cconstructor:','color:red');
+console.log(`obj.constructor: ${obj.constructor}`);
+console.log('%chasOwnProperty:','color:red');
+console.log(`obj.hasOwnProperty('constructor'): ${obj.hasOwnProperty('constructor')}\nobj.hasOwnProperty('name'): ${obj.hasOwnProperty('name')}`);
+console.log('%cisPrototypeOf:','color:red');
+console.log(`Object.prototype.isPrototypeOf(obj): ${Object.prototype.isPrototypeOf(obj)}\nObject.isPrototypeOf(obj): ${Object.isPrototypeOf(obj)}`);
+console.log('%cpropertyIsEnumerable:','color:red');
+console.log(`obj.propertyIsEnumerable('name'): ${obj.propertyIsEnumerable('name')}\nobj.propertyIsEnumerable('lovers'): ${obj.propertyIsEnumerable('lovers')}`);
+console.log('%ctoLocaleString:','color:red');
+console.log(`obj.toLocaleString(): ${obj.toLocaleString()}`);
+console.log('%ctoString:','color:red');
+console.log(`obj.toString(): ${obj.toString()}`);
+console.log('%cvalueOf:','color:red');
+console.log(`obj.valueOf(): ${obj.valueOf()}`);
 ```
 
 ![3.6](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.6.png)
