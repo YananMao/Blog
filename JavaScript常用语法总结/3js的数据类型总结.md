@@ -69,7 +69,7 @@ console.log(typeof function: ${typeof function(){}});`
 
    ###### 	parseInt( ):
 
-   ​	把**字符串**转换为10进制整数，从前往后解析，**[可以指定把字符串按多少进制进行解析](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)**)。
+   ​	把**字符串**转换为10进制整数，从前往后解析，**[可以指定把字符串按多少进制进行解析](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)**。
 
    ###### 	parseFloat():
 
@@ -142,3 +142,15 @@ console.log(typeof function: ${typeof function(){}});`
 
 ### 引用类型（Object）
 
+看下一个最简单的对象，他从Object（）继承了哪些属性：
+
+```
+let obj = new Object();`
+console.log(obj.__proto__);
+```
+
+![3.6](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.6.png)
+
+![3.6](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/3.7.png)
+
+to be continued~~
