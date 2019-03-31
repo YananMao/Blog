@@ -148,6 +148,7 @@ console.log(typeof function: ${typeof function(){}});`
 let obj = new Object();
 obj.name = 'mao';
 obj.lovers = ['sherlock','messi','zht'];
+obj.age = 23;
 console.log(obj.__proto__);
 console.log(`let obj = new Object();\nobj.name = 'mao';`)
 console.log('%cconstructor:','color:red');
@@ -157,7 +158,7 @@ console.log(`obj.hasOwnProperty('constructor'): ${obj.hasOwnProperty('constructo
 console.log('%cisPrototypeOf:','color:red');
 console.log(`Object.prototype.isPrototypeOf(obj): ${Object.prototype.isPrototypeOf(obj)}\nObject.isPrototypeOf(obj): ${Object.isPrototypeOf(obj)}`);
 console.log('%cpropertyIsEnumerable:','color:red');
-console.log(`obj.propertyIsEnumerable('name'): ${obj.propertyIsEnumerable('name')}\nobj.propertyIsEnumerable('lovers'): ${obj.propertyIsEnumerable('lovers')}`);
+console.log(`obj.propertyIsEnumerable('name'): ${obj.propertyIsEnumerable('name')}\nobj.propertyIsEnumerable('lovers'): ${obj.propertyIsEnumerable('lovers')}\nobj.propertyIsEnumerable('age'): ${obj.propertyIsEnumerable('age')}`);
 console.log('%ctoLocaleString:','color:red');
 console.log(`obj.toLocaleString(): ${obj.toLocaleString()}`);
 console.log('%ctoString:','color:red');
