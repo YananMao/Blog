@@ -107,6 +107,30 @@ console.log(`typeof function: ${typeof function(){}}`);
 
    number类型的数据可以调用哪些方法呢？
 
+   ```
+   let num = 666;
+   console.log(`let num = 666;`);
+   console.log('%ctoString():','color:red');
+   console.log(`num.toString(2): ${num.toString(2)}\t//toString()可以把number转换为对应进制的字符串`);
+   console.log('%ctoFixed():','color:red');
+   console.log(`num.toFixed(3): ${num.toFixed(3)}`);
+   num1 = 1.006
+   console.log(`let num1 = 1.006;\nnum1.toFixed(2): ${num1.toFixed(2)}\t//发现5的时候不入哎~`);
+   console.log('%ctoExponential():','color:red');
+   console.log(`num.toExponential(2): ${num.toExponential(2)}\t//参数表示小数的位数`);
+   console.log('%ctoPrecision():','color:red');
+   console.log(`num.toPrecision(2): ${num.toPrecision(2)}\t//参数表示除了指数部分的总位数`);
+   console.log(`num.toPrecision(3): ${num.toPrecision(3)}`);
+   console.log('%ces6新增~~~\nNumber.isFinite():','color:red');
+   console.log(`Number.isFinite('test'): ${Number.isFinite('test')}\t//参数不是number，返回false`);
+   console.log(`Number.isFinite('666'): ${Number.isFinite('666')}`);
+   console.log(`Number.isFinite(11): ${Number.isFinite(11)}`);
+   console.log(`Number.isFinite(true): ${Number.isFinite(true)}`);
+   console.log(`Number.isFinite(NaN): ${Number.isFinite(NaN)}`);
+   console.log(`Number.isFinite(Infinity): ${Number.isFinite(Infinity)}`);
+   console.log('%cNumber.isNaN():','color:red');
+   ```
+
    
 
 2. #### String
