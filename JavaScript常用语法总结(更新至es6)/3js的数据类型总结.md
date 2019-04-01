@@ -3,13 +3,13 @@
 使用 typeof 对数据类型进行判断：
 
 ```
-console.log(typeof number: ${typeof 1});`
-console.log(typeof string: ${typeof '6666'});`
-console.log(typeof boolean: ${typeof true});`
-console.log(typeof undefined: ${typeof undefined});`
-console.log(typeof null: ${typeof null});`
-console.log(typeof object: ${typeof {}});`
-console.log(typeof function: ${typeof function(){}});`
+console.log(`typeof number: ${typeof 1}');
+console.log(`typeof string: ${typeof '6666'}`);
+console.log(`typeof boolean: ${typeof true}`);
+console.log(`typeof undefined: ${typeof undefined}`);
+console.log(`typeof null: ${typeof null}`);
+console.log(`typeof object: ${typeof {}}`);
+console.log(`typeof function: ${typeof function(){}}`);
 ```
 
 控制台结果为：
@@ -76,6 +76,38 @@ console.log(typeof function: ${typeof function(){}});`
    ​	把**字符串**转化为整数或者小数，从前往后解析，**不能指定把字符串按多少进制进行解析**。
 
    ##### e [进制转换](https://github.com/YananMao/JavaScript-Grammars/blob/master/JavaScript%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%80%BB%E7%BB%93/4js%E4%B8%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.md)
+
+   ##### f 方法
+
+   一个基本类型的数据(number,string,boolean)为什么可以像一个object那样调用方法？
+
+   这是因为有3中特殊的引用类型，Number(),String(),Boolean(),叫做**基本引用类型**。
+
+   以一个string为例：
+
+   ```
+   str1 = 'summer';
+   
+   str2 = str1.substring(2);
+   ```
+
+   第二行代码执行的时候相当于执行了下面这段代码
+
+   ```
+   str1 = new String('summer');
+   
+   str2 = str1.substring(2);
+   
+   str1 = null;
+   ```
+
+   注意：**对应的实例对象在执行完这句代码后就被销毁了，所以不能给基本类型数据添加属性和方法**。
+
+   Number(),Boolean()同理。
+
+   number类型的数据可以调用哪些方法呢？
+
+   
 
 2. #### String
 
