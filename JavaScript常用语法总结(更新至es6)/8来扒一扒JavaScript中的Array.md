@@ -2,7 +2,7 @@
 
 数组是在JavaScript中经常使用的一种数据类型，今天来看一看Array都有哪些操作吧。
 
-## 一判断一个数据是不是数组
+## 一、判断一个数据是不是数组
 
 都有哪些方法呢，让我来动一下我聪明的小脑袋来想一想。
 
@@ -41,3 +41,10 @@ console.log(`Object.prototype.toString.call(frameArray) === "[object Array]": ${
 ```
 
 ![8.0](https://github.com/YananMao/JavaScript-Grammars/blob/master/pictures/8.0.png)
+
+## 二、查找类
+
+### 1、元素是否在数组里
+
+​	我们现在已经可以判断一个对象是不是数组了，假设判断出一个对象是数组了，那怎么判断某个元素在不在这个数组里呢？
+
