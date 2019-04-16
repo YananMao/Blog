@@ -1,2 +1,5 @@
 # everyday-work
-记录下每天的小tips和todolist
+总结一下JS的语法(包含es6语法~)
+
+what is dead may never die
+
