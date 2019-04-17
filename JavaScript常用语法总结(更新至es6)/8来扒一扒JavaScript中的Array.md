@@ -52,3 +52,21 @@ console.log(`Object.prototype.toString.call(frameArray) === "[object Array]": ${
 
 ## 三、创建一个数组
 
+```
+var arr1 = [1,2,3];
+var arr2 = new Array(2);
+var arr3 = Array('mao');
+var arr4 = Array(2,3);
+var arr5 = Array.of('1');
+console.log('%c创建一个数组~','color:red;font-size:16px');
+console.log('%c1 var arr1=[1,2,3]','color:red');
+console.log('%c2 (new) Array():','color:red');
+console.log(`var arr2 = new Array(2);\t//arr2:`,arr2);
+console.log(`var arr3 = Array('mao');\t//arr3:`,arr3);
+console.log(`var arr4 = Array(2,3);\t//arr4:`,arr4);
+console.log('使用Array()创建数组的时候,如果参数是一个数字n,会创建长度为n的数组,如果n是负数会报错.\n那这样的话如果想创建[1]或者[-1]使用这种方法就不能创建了')
+console.log('%c3 Array.of():\t//可以避免上述Array()的不足','color:red');
+console.log(`var arr5 = Array.of('1');\t//arr5:`,arr5);
+console.log('%c4 Array.from():\t//可以把array-like object和iterable object转换为数组','color:red',);
+```
+
