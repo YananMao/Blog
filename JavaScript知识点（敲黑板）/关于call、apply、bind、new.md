@@ -42,11 +42,16 @@ Function.prototype.call = function(ctx,...args){
   for(let i=1,len=arguments.length;i<len;i++){
     args1.push(`arguments[${i}]`)
   }
-  let result = eval(`ctx.callFn(${args1})`)
+  let result = eval(`ctx.callFn(${args1})`
+  //函数调用完之后要删除该属性
   delete ctx.callFn;
   return result
 }
 ```
+
+### tips：
+
+1. ##### 函数调用完之后要删除对应的属性哦
 
 ## 三、apply
 
@@ -73,6 +78,13 @@ Function.prototype.apply = function(ctx,arr){
 // 返回一个新的函数
 // bind返回的函数可以当做构造函数使用，
 Function.prototype.bind = function(ctx,...args){
+    //如果调用bind的不是函数，报错
+    if (typeof this !== "function") {
+      throw new Error("Function.prototype.bind - what is trying to be bound is not 		callable");
+    }
+    
+    
+  //传入的ctx为null或者undefined时，this为window
   ctx = ctx || window;
   let self = this;
   let bound = function(...args1){
@@ -80,13 +92,7 @@ Function.prototype.bind = function(ctx,...args){
     return self.call(this instanceof bound? this:ctx,...args,...args1);
   }
 
-  var fNOP = function () {};
-  fNOP.prototype = this.prototype;
-  bound.prototype = new fNOP();
-
-  // 这里如果采用这种方法，会执行一遍this对应的函数
-  // new的时候，构造函数总会执行一遍，所以可以创建一个空函数
-  // bound.prototype = new this();
+  bound.prototype = Object.create(this.prototype);
 
   return bound;
 
