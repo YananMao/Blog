@@ -1,5 +1,5 @@
-# everyday-work
-准备秋招啦，发现还是把知识点自己整理一下会记得比较清楚呀。冲鸭毛毛^_^
+# 日常总结
+对前端技术的一些思考和总结~
 
 what is dead may never die
 
